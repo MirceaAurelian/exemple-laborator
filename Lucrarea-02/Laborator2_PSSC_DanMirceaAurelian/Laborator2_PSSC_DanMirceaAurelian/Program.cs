@@ -63,7 +63,7 @@ namespace Laborator2_PSSC_DanMirceaAurelian
                     break;
                 }
 
-                listOfShoppingCarts.Add(new(quantity, product_code, address, price));
+                listOfShoppingCarts.Add(new(product_code, quantity, address, price));
             } while (true);
             return listOfShoppingCarts;
         }
