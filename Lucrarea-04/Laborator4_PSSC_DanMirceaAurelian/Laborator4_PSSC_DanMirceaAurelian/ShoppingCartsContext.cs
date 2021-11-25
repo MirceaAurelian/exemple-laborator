@@ -23,8 +23,8 @@ namespace Laborator4_PSSC_DanMirceaAurelian
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ProductDto>().ToTable("Product").HasKey(p => p.ProductId);
-            modelBuilder.Entity<OrderLineDto>().ToTable("OrderLineId").HasKey(ol => ol.OrderLineId);
-            modelBuilder.Entity<OrderHeaderDto>().ToTable("OrderId").HasKey(oh => oh.OrderId);
+            modelBuilder.Entity<OrderLineDto>().ToTable("OrderLine").HasKey(ol => ol.OrderLineId);
+            modelBuilder.Entity<OrderHeaderDto>().ToTable("OrderHeader").HasKey(oh => oh.OrderId);
         }
     }
 }
